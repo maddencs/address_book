@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<title>Add_Contact</title>
+	</head>
+	<body>
+            <form method="POST" action="/contacts/add">
+                {% csrf_token %}
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <label for="main_number">Main Phone #</label>
+                <input type="text" name="main_number">
+                <input type="submit" value="Add Contact">
+            </form>
+	</body>
+</html>
